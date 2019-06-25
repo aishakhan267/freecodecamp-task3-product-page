@@ -3,39 +3,41 @@ body {
     margin:0;
     padding:0;
     font-family: arial;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1466094899371-97b327dff551?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
 }
 #logo>img {
-    width: 80px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    width:80px;
+    margin-top: 15px;
+    margin-left:12px;
 }
 #header {
+    width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     padding: 0px 20px;
-    top: 0;
 }
 #nav-bar {
     display:flex;
+    flex-direction: row;
     justify-content: flex-end;
-    margin-left: auto;
 }
 ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    margin-right:20px;
+   
 }
 li {
-    margin: 0;
-    padding: 0;
+    margin-right:16px;
 }
 .nav-link {
     text-decoration: none;
-    margin-left: 26px;
 }
 #submit {
     color:white;
@@ -43,49 +45,63 @@ li {
     background-color:#668ec1;
     padding:8px 20px;
     font-size: 22px;
-    margin: 10px 0px 0px;
-    display: inline-block;
+    margin: 15px 0;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
 }
-h1 {
-    display: inline-block;
+#apple-sets img {
+    width:100%;
+    height:600px;
+}
+#main>h1 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
 }
 #main {
-    display: inline-flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 #main #email {
     background-color:white;
     border:2px solid black;
     padding: 6px;
     text-align: center;
-    margin-top: 12px;
+    max-width: 275px;
+    width: 100%;
+    
 }
 #features, #description {
     text-align: center;
 }
+.youtube {
+    display: flex;
+    justify-content: center;
+    
+}
 video {
     height: 360px;
     width: 540px;
-    position: absolute;
 }
-@media (max-width:650px)
-    #logo {
-    width:100%;
-    position:relative;
-    margin-top:15px;
-}
-@media (max-width:650px)
-    #logo>img {
-    margin:0 auto;
-}
-@media (max-width:650px) 
+@media (max-width:600px){
     #nav-bar {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    #logo {
+        width:100%;
+    }
+    #apple-sets div {
+        width: 100%;
+        position: relative;
+    }
+    body {
+        background-image: url(https://images.unsplash.com/photo-1499980762202-04245017d5bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+    }
 }
-
